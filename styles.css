@@ -1,0 +1,42 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+body {
+    background-color: bisque;
+    font-family: 'Playfair Display', serif;
+    color: black;
+}
+
+header  {
+    display: flex;
+}
+
+.navigate {
+    list-style-type: none;
+    display: inline-flex;
+}
+
+.to-inline-block {
+    width: auto;
+}
+
+.attach-with-name {
+    display: inline;
+}
+
+#banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 350px;
+}
+
+
+#name-yash {
+    font-family: 'Roboto', sans-serif;
+    display: inline;
+}
