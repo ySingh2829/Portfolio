@@ -1,7 +1,8 @@
 let nameYash = document.getElementById('name-yash');
-let royalBikeDropDown = document.getElementById('royal-bike-down');
+let cityBikeDown = document.getElementById('city-bike-down');
 let arrow = document.getElementById('arrow');
-let royalDisplay = document.getElementById('royal-container');
+let cityDisplay = document.getElementById('city-container');
+let cityTechUsed = document.getElementById('city-tech');
 
 
 nameYash.onclick = function (e) {
@@ -21,16 +22,19 @@ nameYash.onmouseout = function (e) {
     e.target.style.textDecoration = '';
 };
 
-royalBikeDropDown.onmouseenter = function (e) {
+cityBikeDown.onmouseenter = function (e) {
     e.target.style.cursor = 'pointer';
 };
 
-royalBikeDropDown.onclick = function () {
+cityBikeDown.onclick = function () {
     if (arrow.style.transform === '') {
         arrow.style.transform = 'rotate(0deg)';
-        royalDisplay.style.display = 'block';
+        cityDisplay.style.display = 'block';
+        cityTechUsed.style.display = 'block';
+
     } else {
         arrow.style.transform = '';
-        royalDisplay.style.display = '';
+        cityDisplay.style.display = '';
+        cityTechUsed.style.display = '';
     }
 };
