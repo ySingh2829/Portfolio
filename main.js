@@ -15,7 +15,6 @@ nameYash.onclick = function (e) {
 
 nameYash.onmouseenter = function (e) {
     e.target.style.cursor = 'pointer';
-    e.target.style.textDecoration = 'underline';
 };
 
 nameYash.onmouseout = function (e) {
