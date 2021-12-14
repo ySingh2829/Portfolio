@@ -1,4 +1,4 @@
- /* Universal styles */
+/* Universal styles */
 
 * {
     box-sizing: border-box;
@@ -15,14 +15,38 @@ body {
     font-size: 16px;
 }
 
- /* Header styles */
+h2 {
+    margin-bottom: 15px;
+}
+
+
+section {
+    margin-bottom: 20px;
+}
+
+
+/* Header styles */
 
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     font-size: 1.2rem;
-    height: 40px;
+    height: auto;
+    margin-top: 10px;
+}
+
+#header-name a {
+    text-decoration: none;
+    color: black;
+}
+
+#header-name a:hover {
+    cursor: pointer;
+}
+
+#header-name a:active {
+    color: black;
 }
 
 .navigate {
@@ -38,7 +62,12 @@ header {
     font-weight: 600;
 }
 
- /* Banner styles */
+.navigate li a:hover {
+    text-decoration: underline;
+    color: darkolivegreen;
+}
+
+/* Banner styles */
 
 #banner {
     display: flex;
@@ -47,15 +76,43 @@ header {
     height: 350px;
 }
 
-
 #name-yash {
-    font-family: 'Abril Fatface', cursive;
+    font-family: 'Courier New', Courier, monospace;
     display: inline;
     font-size: 2.8rem;
+    font-weight: 700;
+    color: black;
+}
+
+#hyphen {
+    display: inline-block;
+    width: 1.6rem;
+    height: 3rem;
+    /* border: black 2px solid; */
+    background-color: transparent;
+    position: relative;
+    right: 4px;
+    top: 0.5px;
+    animation: pulse 1s linear infinite;
+    /* animation-delay: 2s;
+    animation-iteration-count: infinite; */
+}
+
+@keyframes pulse {
+    49.9% {
+        background-color: transparent;
+    }
+    50.0% {
+        background-color: black;
+    }
+    100% {
+        background-color: black;
+    }
 }
 
 #banner p {
     font-size: 1.6rem;
+    font-weight: 500;
 }
 
 .to-inline-block {
@@ -64,4 +121,195 @@ header {
 
 .attach-with-name {
     display: inline;
+}
+
+
+/* About Me Styles */
+
+
+#about-me p {
+font-family: 'Merriweather', sans-serif;
+font-size: 1.1rem;
+font-weight: 500;
+line-height: 1.4;
+}
+
+#time-show {
+font-family: 'Courier New', Courier, monospace;
+font-weight: 700;
+}
+
+/* Projects Styles */
+
+#project-list {
+    list-style-type: circle;
+    margin-left: 30px;
+    font-family: 'Merriweather', sans-serif;
+    font-size: 1.05rem;
+}
+
+#project-list li {
+    margin-bottom: 20px;
+}
+
+#arrow-container {
+    margin-left: 20px;
+    width: 18px;
+    height: 18px;
+    overflow: hidden;
+    display: inline;
+}
+
+#arrow-container > img {
+    max-width: 18px;
+    height: auto;
+    transform: rotate(270deg);
+}
+
+.city-bike-content {
+    display: flex;
+    margin: 20px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.tech-used h3 {
+    margin-bottom: 20px;
+}
+
+#tech-list li {
+    margin-left: 30px;
+}
+
+.tech-used {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#city-container {
+    display: none;
+    width: 70%;
+    height: 400px;
+    overflow: hidden;
+}
+
+#city-container > img {
+    max-width: 100%;
+    height: auto;
+    align-self: center;
+}
+
+/* Skills Styles */
+#tech-skills-container {
+    display: flex;
+    width: 40%;
+    margin: auto;
+    margin-top: 20px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.skill-container {
+    width: 40px;
+    height: 40px;
+    overflow: hidden;
+}
+
+.skill-container img {
+    width: auto;
+    max-height: 40px;
+}
+
+#python-container {
+    width: 30px;
+    height: 30px;
+    overflow: hidden;
+}
+
+#python-container img {
+    width: auto;
+    max-height: 30px;
+}
+
+#github-container {
+    width: 50px;
+    height: 50px;
+    overflow: hidden;
+}
+
+#github-container img {
+    width: auto;
+    max-height: 50px;
+}
+
+/* Media Queries */
+@media only screen and (max-width: 480px), (orientation: portrait) {
+    body {
+        width: 90%;
+    }
+
+    header {
+        margin-top: 40px;
+        font-size: 1.6rem;
+    }
+
+    #header-name {
+        justify-self: start;
+    }
+
+    .navigate {
+        width: auto;
+        font-size: 26px;
+        margin-left: 20px;
+    }
+
+    .navigate li {
+        margin-right: 30px;
+    }
+
+    #banner {
+        height: 500px;
+    }
+
+    #name-yash {
+        font-size: 5rem
+    }
+
+    #hyphen {
+        height: 5rem;
+        width: 3rem;
+        right: 6px;
+        top: 0px;
+    }
+
+    #banner p {
+        font-size: 3rem;
+    }
+
+    #about-me p {
+        font-size: 1.1rem;
+    }
+
+    .city-bike-content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #city-container {
+        display: none;
+        width: 90%;
+        height: 400px;
+        overflow: hidden;
+    }
+
+    .tech-used {
+        margin-top: 20px;
+        flex-direction: row;
+    }
+
+    #tech-list {
+        display: flex;
+    }
 }

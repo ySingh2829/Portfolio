@@ -5,20 +5,23 @@
         <link href="./styles.css" rel="stylesheet" type="text/css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Dancing+Script:wght@400;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700;1,800&family=Roboto:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=JetBrains+Mono:wght@100;400&family=Merriweather:ital,wght@0,400;0,700;1,400&family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700;1,800&family=Roboto:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
         <script defer src="./main.js"></script>
+        <script defer src="./scripts/time-elapsed.js"></script>
     </head>
 
     <body>
         <header>
-            <h3 id="header-name">Yash Singh</h3>
+            <h3 id="header-name">
+                <a href="#">Yash Singh</a>
+            </h3>
 
             <nav>
                 <ul class="navigate">
-                    <li><a href="#">About Me</a></li>
-                    <li><a href="#">My Projects</a></li>
-                    <li><a href="#">Skills</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#about-me">About Me</a></li>
+                    <li><a href="#projects">My Projects</a></li>
+                    <li><a href="#tech-skills">Skills</a></li>
+                    <li><a href="./contact/contact.html">Contact</a></li>
                 </ul>
             </nav>
         </header>
@@ -26,9 +29,64 @@
         <section id="banner">
             <div class="to-inline-block">
                 <p class="attach-with-name">Hi! I am</p>
-                <h1 id="name-yash">Yash.</h1>
+                <div id="command-line">
+                    <h1 id="name-yash">$yash</h1>
+                    <div id="hyphen"></div>
+                </div>
                 <p class="to-center"> I design web apps</p>
             </div>  
+        </section>
+
+        <section id="about-me">
+            <h2>About Me</h2>
+            <p>Welcome to my online portfolio. I am a Computer Engineer graduate, but only recently have I started experimenting in web devlopment. Yes, I am a rookie and have a lot to learn. But I hope I get there someday.</p>
+            <br>
+            <p>Fun is also a reason I like to code. For example, I am <span id="time-show"></span> seconds old!</p>
+        </section>
+
+        <section id="projects">
+            <h2>My Projects</h2>
+            <ul id="project-list">
+                <li id="city-bike-down">City Biker's Club<div id="arrow-container"><img id="arrow" src="./resources/png-icons/arrow-down.png"></div>
+                    <div class="city-bike-content">
+                        <div id="city-container">
+                            <img src="./resources/images/city-bikers-club.png">
+                        </div>
+                        <div id="city-tech" class="tech-used">
+                            <h3>Technology Used:</h3>
+                            <ul id="tech-list">
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>Java Script</li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </section>
+
+        <section id="tech-skills">
+            <h2>Skills</h2>
+            <div id="tech-skills-container">
+                <div class="skill-container">
+                    <img src="./resources/png-icons/tech-used/html5-png.png">
+                </div>
+                <div class="skill-container">
+                    <img src="./resources/png-icons/tech-used/css-png.png">
+                </div>
+                <div class="skill-container">
+                    <img src="./resources/png-icons/tech-used/javascript-png.png">
+                </div>
+                <div id="python-container" class="skill-container">
+                    <img src="./resources/png-icons/tech-used/python-png.png">
+                </div>
+                <div class="skill-container">
+                    <img src="./resources/png-icons/tech-used/git-png.png">
+                </div>
+                <div id="github-container" class="skill-container">
+                    <img src="./resources/png-icons/social-media/github-png.png">
+                </div>
+            </div>
         </section>
     </body>
 </html>

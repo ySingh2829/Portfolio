@@ -1,0 +1,162 @@
+/* Universal styles */
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: bisque;
+    font-family: 'Playfair Display', serif;
+    color: black;
+    width: 80%;
+    margin: auto;
+    font-size: 16px;
+}
+
+
+/* Header styles */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.2rem;
+    height: auto;
+    margin-top: 10px;
+}
+
+#header-name a {
+    text-decoration: none;
+    color: black;
+}
+
+#header-name a:hover {
+    cursor: pointer;
+}
+
+#header-name a:active {
+    color: black;
+}
+
+.navigate {
+    list-style-type: none;
+    display: inline-flex;
+    width: 300px;
+    justify-content: space-between;
+    font-size: 1rem;
+}
+
+.navigate li a {
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.navigate li a:hover {
+    text-decoration: underline;
+    color: darkolivegreen;
+}
+
+/* Contact */
+
+#contact {
+    margin-top: 50px;
+    font-size: large;
+}
+
+.reach-me {
+    display: inline;
+}
+
+#social-media-container {
+    width: 60%;
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.media-container {
+    width: 30px;
+    height: 30px;
+    overflow: hidden;
+}
+
+.media-container img {
+    max-width: 30px;
+    height: auto;
+}
+
+#gmail-container {
+    width: 50px;
+    height: 30px;
+    overflow: hidden;
+}
+
+#gmail-container img {
+    max-width: 50px;
+    height: auto;
+}
+#github-container {
+
+    width: 55px;
+    height: 55px;
+    overflow: hidden;
+}
+
+#github-container img {
+    max-width: 50px;
+    height: auto;
+}
+
+#linkdin-container {
+
+    width: 40px;
+    height: 40px;
+    overflow: hidden;
+}
+
+#linkdin-container img {
+    max-width: 37px;
+    height: auto;
+}
+
+/* Media Queries */
+@media only screen and (max-width: 480px), (orientation: portrait) {
+    body {
+        width: 90%;
+    }
+
+    header {
+        margin-top: 40px;
+        font-size: 1.6rem;
+    }
+
+    #header-name {
+        justify-self: start;
+    }
+
+    .navigate {
+        width: auto;
+        font-size: 26px;
+        margin-left: 20px;
+    }
+
+    .navigate li {
+        margin-right: 30px;
+    }
+
+    p {
+        font-size: 1.6rem;
+    }
+
+    #social-media-container {
+        width: 60%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: auto;
+        margin-top : 30px;
+    }
+}
