@@ -23,7 +23,8 @@ header {
     justify-content: space-between;
     align-items: center;
     font-size: 1.2rem;
-    height: 40px;
+    height: auto;
+    margin-top: 10px;
 }
 
 #header-name a {
@@ -64,12 +65,16 @@ header {
     font-size: large;
 }
 
+.reach-me {
+    display: inline;
+}
+
 #social-media-container {
-    margin-top: 10px;
-    width: 40%;
+    width: 60%;
     display: inline-flex;
     justify-content: space-between;
     align-items: center;
+    margin-top: 40px;
 }
 
 .media-container {
@@ -115,4 +120,43 @@ header {
 #linkdin-container img {
     max-width: 37px;
     height: auto;
+}
+
+/* Media Queries */
+@media only screen and (max-width: 480px), (orientation: portrait) {
+    body {
+        width: 90%;
+    }
+
+    header {
+        margin-top: 40px;
+        font-size: 1.6rem;
+    }
+
+    #header-name {
+        justify-self: start;
+    }
+
+    .navigate {
+        width: auto;
+        font-size: 26px;
+        margin-left: 20px;
+    }
+
+    .navigate li {
+        margin-right: 30px;
+    }
+
+    p {
+        font-size: 1.6rem;
+    }
+
+    #social-media-container {
+        width: 60%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: auto;
+        margin-top : 30px;
+    }
 }

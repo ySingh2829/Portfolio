@@ -24,6 +24,7 @@ section {
     margin-bottom: 20px;
 }
 
+
 /* Header styles */
 
 header {
@@ -31,7 +32,8 @@ header {
     justify-content: space-between;
     align-items: center;
     font-size: 1.2rem;
-    height: 40px;
+    height: auto;
+    margin-top: 10px;
 }
 
 #header-name a {
@@ -114,7 +116,6 @@ font-weight: 700;
 
 #project-list {
     list-style-type: circle;
-    display: inline-block;
     margin-left: 30px;
     font-family: 'Merriweather', sans-serif;
     font-size: 1.05rem;
@@ -142,6 +143,7 @@ font-weight: 700;
     display: flex;
     margin: 20px;
     justify-content: space-around;
+    align-items: center;
 }
 
 .tech-used h3 {
@@ -154,12 +156,14 @@ font-weight: 700;
 
 .tech-used {
     display: none;
-    align-self: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 #city-container {
     display: none;
-    width: 60%;
+    width: 70%;
     height: 400px;
     overflow: hidden;
 }
@@ -167,7 +171,7 @@ font-weight: 700;
 #city-container > img {
     max-width: 100%;
     height: auto;
-    display: block;
+    align-self: center;
 }
 
 /* Skills Styles */
@@ -211,4 +215,67 @@ font-weight: 700;
 #github-container img {
     width: auto;
     max-height: 50px;
+}
+
+/* Media Queries */
+@media only screen and (max-width: 480px), (orientation: portrait) {
+    body {
+        width: 90%;
+    }
+
+    header {
+        margin-top: 40px;
+        font-size: 1.6rem;
+    }
+
+    #header-name {
+        justify-self: start;
+    }
+
+    .navigate {
+        width: auto;
+        font-size: 26px;
+        margin-left: 20px;
+    }
+
+    .navigate li {
+        margin-right: 30px;
+    }
+
+    #banner {
+        height: 500px;
+    }
+
+    #name-yash {
+        font-size: 5rem
+    }
+
+    #banner p {
+        font-size: 3rem;
+    }
+
+    #about-me p {
+        font-size: 1.1rem;
+    }
+
+    .city-bike-content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #city-container {
+        display: none;
+        width: 90%;
+        height: 400px;
+        overflow: hidden;
+    }
+
+    .tech-used {
+        margin-top: 20px;
+        flex-direction: row;
+    }
+
+    #tech-list {
+        display: flex;
+    }
 }

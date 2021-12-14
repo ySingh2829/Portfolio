@@ -29,8 +29,8 @@ cityBikeDown.onmouseenter = function (e) {
 cityBikeDown.onclick = function () {
     if (arrow.style.transform === '') {
         arrow.style.transform = 'rotate(0deg)';
-        cityDisplay.style.display = 'block';
-        cityTechUsed.style.display = 'block';
+        cityDisplay.style.display = 'flex';
+        cityTechUsed.style.display = 'flex';
 
     } else {
         arrow.style.transform = '';
