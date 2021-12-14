@@ -94,8 +94,11 @@ font-weight: 700;
 /* Projects Styles */
 
 #project-list {
-    list-style: none;
+    list-style-type: circle;
     display: inline-block;
+    margin-left: 30px;
+    font-family: 'Merriweather', sans-serif;
+    font-size: 1.05rem;
 }
 
 #project-list li {
@@ -118,6 +121,7 @@ font-weight: 700;
 
 #royal-container {
     display: none;
+    margin-top: 20px;
     margin-left: 20px;
     width: 60%;
     height: 400px;
