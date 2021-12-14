@@ -26,6 +26,19 @@ header {
     height: 40px;
 }
 
+#header-name a {
+    text-decoration: none;
+    color: black;
+}
+
+#header-name a:hover {
+    cursor: pointer;
+}
+
+#header-name a:active {
+    color: black;
+}
+
 .navigate {
     list-style-type: none;
     display: inline-flex;
@@ -37,6 +50,11 @@ header {
 .navigate li a {
     text-decoration: none;
     font-weight: 600;
+}
+
+.navigate li a:hover {
+    text-decoration: underline;
+    color: darkolivegreen;
 }
 
 /* Contact */
