@@ -88,22 +88,22 @@ header {
     display: inline-block;
     width: 1.8rem;
     height: 3.3rem;
-    background-color: transparent;
+    background-color: black;
     position: relative;
     right: 6.1px;
     top: 10px;
-    animation: pulse 1s linear infinite;
+    animation: pulse 1s linear 2.9s infinite;
 }
 
 @keyframes pulse {
     49.9% {
-        background-color: transparent;
+        background-color: black;
     }
     50.0% {
-        background-color: black;
+        background-color: transparent;
     }
     100% {
-        background-color: black;
+        background-color: transparent;
     }
 }
 
